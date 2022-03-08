@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jQuery 실습 예제03</title>
+	<!-- jQuery 인클루드 -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("div").animate({height:300}, "slow");
+			$("div").animate({width:300}, "slow");
+			$("div").animate({height:100}, "slow");
+			$("div").animate({width:100}, "slow");
+		});
+	});
+</script>
+</head>
+<body>
+	<button>애니메이션 시작하기</button>
+	<div style="background:greenyellow; width:100px; height:100px; position:relative;"></div>
+</body>
+</html>

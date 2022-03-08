@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jQuery 실습 예제01</title>
+	<!-- jQuery 인클루드 -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("p").hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<h3>이 부분은 타이틀</h3>
+	<p>이 부분은 단락입니다.</p>
+	<p>이 부분은 또 다른 단락입니다.</p>
+	<button>Click Me</button>
+</body>
+</html>
