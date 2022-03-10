@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jQuery 라이브러리 파일에서 지원해주는 change() 메소드 활용 예제01</title>
+	<!-- jQuery 인클루드 -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	// change() 메소드는 select객체의 값이 변경될 때 감지하는 역할의 메소드이다.
+	// val() 메소드의 역할은 사용자가 선택한 value값을 가져오는 메소드, 즉 get 개념이다.
+	$(function() {
+		$("#chg").change(function() {
+			alert("교육생이 선택한 과목은 " + $(this).val());
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="section">
+		<select id="chg">
+			<option selected>과목선택</option>
+			<option value="HTML">HTML</option>
+			<option value="JAVA">JAVA</option>
+			<option value="ORACLE">ORACLE</option>
+			<option value="JavaScript">JavaScript</option>
+		</select>
+	</div>
+</body>
+</html>
